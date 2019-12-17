@@ -22,7 +22,7 @@ class Point {
   
   public void setVel(float x, float y) {
     velocity.x = x;
-    velocity.x = y;
+    velocity.y = y;
   }
   
   public PVector getPos() {return position;}
