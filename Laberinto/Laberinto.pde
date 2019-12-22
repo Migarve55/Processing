@@ -2,6 +2,7 @@
 lapiz[] l;
 int lapices = 1;
 int maxLap = 500;
+int posibilidad = 100;
 
 int bk = 0;
 
@@ -56,7 +57,7 @@ class lapiz {
     stroke(lc);
     line(last_xpos,last_ypos,xpos,ypos);
     //Crea otro objeto que las dibuja
-    if (int(random(0,100)) == 9 && lapices < maxLap)
+    if (int(random(0,posibilidad)) == posibilidad - 1 && lapices < maxLap)
     {  
     lapices += 1;
     l[lapices - 1] = new lapiz(xpos,ypos,radio,lc);
